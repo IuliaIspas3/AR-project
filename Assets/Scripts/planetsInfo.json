@@ -1,0 +1,115 @@
+[
+  {
+    "name": "Mercury",
+    "description": "Smallest planet in the solar system and closest to the Sun. Rocky surface full of craters, similar to our Moon. Very thin atmosphere.",
+    "size_density": {
+      "diameter_km": 4880,
+      "diameter_percent_earth": 38,
+      "density_g_per_cm3": 5.43
+    },
+    "orbit_day": {
+      "year_days": 88,
+      "day_days": 59
+    },
+    "fun_fact": "A single Mercury day lasts almost 2 Mercury years!"
+  },
+  {
+    "name": "Venus",
+    "description": "Earth’s “sister planet” in size, but wrapped in a thick atmosphere of CO₂ with clouds of sulfuric acid. Hottest planet.",
+    "size_density": {
+      "diameter_km": 12104,
+      "diameter_percent_earth": 95,
+      "density_g_per_cm3": 5.24
+    },
+    "orbit_day": {
+      "year_days": 225,
+      "day_days": 243,
+      "rotation": "retrograde"
+    },
+    "fun_fact": "A Venus day is longer than its year, and the Sun rises in the west."
+  },
+  {
+    "name": "Earth",
+    "description": "Our home planet, the only known world with liquid water, plate tectonics, and life.",
+    "size_density": {
+      "diameter_km": 12742,
+      "density_g_per_cm3": 5.51
+    },
+    "orbit_day": {
+      "year_days": 365,
+      "day_hours": 24
+    },
+    "fun_fact": "About 70% of Earth is covered by water, but the oceans make up only 0.02% of Earth’s mass."
+  },
+  {
+    "name": "Mars",
+    "description": "The Red Planet, famous for iron-rich dust, giant volcanoes (Olympus Mons), and deep valleys (Valles Marineris).",
+    "size_density": {
+      "diameter_km": 6779,
+      "diameter_percent_earth": 53,
+      "density_g_per_cm3": 3.93
+    },
+    "orbit_day": {
+      "year_days": 687,
+      "day_hours": 24.6
+    },
+    "fun_fact": "Mars has the largest volcano in the solar system, Olympus Mons, three times taller than Everest."
+  },
+  {
+    "name": "Jupiter",
+    "description": "Largest planet, a gas giant with no solid surface. Famous for its Great Red Spot (a storm lasting centuries).",
+    "size_density": {
+      "diameter_km": 139820,
+      "diameter_times_earth": 11,
+      "density_g_per_cm3": 1.33
+    },
+    "orbit_day": {
+      "year_years": 11.9,
+      "day_hours": 10
+    },
+    "fun_fact": "Jupiter is so massive it influences the orbits of other planets and has 79+ moons."
+  },
+  {
+    "name": "Saturn",
+    "description": "Gas giant with the most spectacular ring system, made of billions of icy particles.",
+    "size_density": {
+      "diameter_km": 116460,
+      "diameter_times_earth": 9.5,
+      "density_g_per_cm3": 0.69
+    },
+    "orbit_day": {
+      "year_years": 29.5,
+      "day_hours": 10.7
+    },
+    "fun_fact": "Saturn would float in water if a big enough bathtub existed."
+  },
+  {
+    "name": "Uranus",
+    "description": "Ice giant with methane-rich atmosphere giving it a cyan color. Uniquely tilted at 98°, rolling on its side.",
+    "size_density": {
+      "diameter_km": 50724,
+      "diameter_times_earth": 4,
+      "density_g_per_cm3": 1.27
+    },
+    "orbit_day": {
+      "year_years": 84,
+      "day_hours": 17,
+      "rotation": "retrograde"
+    },
+    "fun_fact": "Each pole experiences 42 years of sunlight, then 42 years of darkness."
+  },
+  {
+    "name": "Neptune",
+    "description": "Ice giant, deep blue due to methane, with extreme winds and storms. The farthest planet from the Sun.",
+    "size_density": {
+      "diameter_km": 49244,
+      "diameter_times_earth": 3.9,
+      "density_g_per_cm3": 1.64
+    },
+    "orbit_day": {
+      "year_years": 165,
+      "day_hours": 16
+    },
+    "fun_fact": "Winds can reach 2,100 km/h, the fastest in the solar system."
+  }
+]

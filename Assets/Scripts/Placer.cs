@@ -3,7 +3,6 @@ namespace Assets.Scripts
     using System.Collections.Generic;
     using UnityEngine;
     using UnityEngine.EventSystems;
-    using UnityEngine.Serialization;
     using UnityEngine.XR.ARFoundation;
     using UnityEngine.XR.ARSubsystems;
 

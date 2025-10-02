@@ -3,19 +3,32 @@ using UnityEngine;
 public class PlanetOrbit : MonoBehaviour
 {
     [Header("Orbit Settings")]
-    public Transform orbitCenter; // usually the Sun
-    public float orbitSpeed = 10f; // degrees per second
-    public float rotationSpeed = 50f; // planet's own spin
+    public Transform orbitCenter;          
+    public float orbitSpeed = 10f;          
+    [Tooltip("Direction of the orbital plane’s normal. Normalize if you set it in code.")]
+    public Vector3 orbitAxis = Vector3.up;  
+    [Header("Rotation Settings")]
+    public float rotationSpeed = 50f;       
+    [Tooltip("Planet’s axial tilt. 0 = perpendicular to orbitAxis.")]
+    [Range(0f, 180f)]
+    public float axialTilt = 23.5f;         
+    private Vector3 spinAxis;               
+
+    void Start()
+    {
+        spinAxis = Quaternion.AngleAxis(axialTilt, transform.right) * transform.up;
+    }
 
     void Update()
     {
         if (orbitCenter != null)
         {
-            // Orbit around the sun
-            transform.RotateAround(orbitCenter.position, Vector3.up, orbitSpeed * Time.deltaTime);
+            transform.RotateAround(
+                orbitCenter.position,
+                orbitAxis.normalized,
+                orbitSpeed * Time.deltaTime
+            );
         }
-
-        // Rotate around its own axis
-        transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+        transform.Rotate(spinAxis, rotationSpeed * Time.deltaTime, Space.World);
     }
 }

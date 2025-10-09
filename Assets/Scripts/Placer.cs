@@ -23,7 +23,8 @@ namespace Assets.Scripts
             if (EventSystem.current.IsPointerOverGameObject()) return;
             if (!raycastManager.Raycast(position, _hits, TrackableType.PlaneWithinPolygon)) return;
             var hitpose = _hits[0].pose;
-            hitpose.position.y += 0.05f;
+            float height = objectToPlace.transform.localScale.y / 2.0f; //for future improvements
+            hitpose.position.y += 0.25f;
             Instantiate(objectToPlace, hitpose.position, hitpose.rotation);
             _placed = true;
         }

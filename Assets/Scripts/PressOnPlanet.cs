@@ -31,7 +31,7 @@ public class PressOnAPlanet : PressInputBase
             { "jupiter", jupiterUI },
             { "saturn", saturnUI },
             { "uranus", uranusUI },
-            { "sphere", sunUI },
+            { "sun", sunUI },
             { "neptune", neptuneUI }
         };
 
@@ -54,7 +54,6 @@ public class PressOnAPlanet : PressInputBase
             
                 
                 Debug.Log(activeObject);
-                //if (activeObject != null) return;
                 Debug.Log(hitObject.name.ToLower());
                 
                 if (activeObject != null)
@@ -75,5 +74,17 @@ public class PressOnAPlanet : PressInputBase
             
         }
     }
-    
+
+    public void OnButtonClick()
+    {
+        activeObject.SetActive(false);
+        uiManager.HideInfo();
+    }
+
+    public GameObject getActiveObject()
+    {
+        return activeObject;
+    }
+
+
 }

@@ -22,7 +22,7 @@ public class ObjectInfoUI : MonoBehaviour
     public void ShowInfo(string name)
     {
         nameText.text = name;
-        switch (nameText.text)
+        switch (name)
         {
             case "Mercury":
                 descriptionText.text =

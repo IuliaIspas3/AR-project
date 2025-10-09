@@ -12,6 +12,7 @@ namespace Assets.Scripts
     {
         [SerializeField] private ARRaycastManager raycastManager;
         [SerializeField] private GameObject objectToPlace;
+
         private static List<ARRaycastHit> _hits = new();
         private bool _placed;
 

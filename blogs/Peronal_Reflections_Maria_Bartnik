@@ -1,0 +1,19 @@
+Personal reflactions - Maria Bartnik
+Main contributions:
+- Logic of interactions of objects with each other in VR (trash with trashcans)
+- Logic of interaction of user with planets in AR
+- Logic of setup of the planets in AR enviroment
+- Logic of interactions between UI elements in AR.
+- Contributed in implementing scoring logic in VR
+
+As a person who has taken the GMD elective at VIA University College, it was interesting to learn and expand the Unity knowledge and skills with the XR components. 
+My main contributions were focus on the code logic of interaction between elements of the project, both in VR and AR.
+In AR for example my main contribution was the proper utilisation of the XR raycasting to spawn the solar system slightly above the detected plane as well as the logic on pressing on an planet causing them
+to appear, change or disappear from the user's view in the interface. To achieve that, a proper understanding of AR session structure, AR camera and raycasting was required. It took many tries to figure out properly how user's interaction with the screen influences selection of the planets.
+The AR could clearly use some improvements. There was a lot of discussion going on about the proper ratio between the sizes of the planets, if we should make them more realistic. The same thing for the speed of the orbiting in their own axis or the sun’s. Since it was supposed to be educational project, we aimed to represent the ratio of the speeds and sizes in relation to other planet as close to truth as possible, but we had to keep in mind that it needs to be user’s friendly.
+One thing I am not happy with is how it is not a “table-top” projection. Then object spawns too big and too long for a table. If given more time, I would love to study more on how to properly recalculate the size of the 3D game object, so it actually fits on a table or any plane that is detected.
+
+During the VR project my main contributions were on how the objects and the user interacted with each other. That included creating and tagging the proper colliders, writing scripts that implement the proper logic and adding the XR properties to them, such as the interactable XR property. Again, this could have been done thanks to the knowledge of reycasting and XR origin components. 
+The interactions of the user could use a lot of improvements. We barely scratched the surface of the properties that allow to interact with the object, by allowing them to grab them. The idea was to make user throw the trash into the proper trashcan of the type, but the further the user is from the bin, more point they gain. It is somehow implemented, but for the improvements, there should be improvements that disable the button usage for pulling and pushing the object away from the user and makes it imitate holding in the actual hand and not floating in the air. We tried changing the settings of the force of the throw of the object and fixing the bug of the trash disappearing if user holds it and by accidents puts it through the wall, and I am sure with more time it could have been improved. On top of that, the walking around the environment was  left as the default setting that XR origin provides. In the future, the project could use more limitations and improvements on what can be done in the interactions with the objects, to truly embrace the main core of the concept of the game.
+
+When it comes to VR project, I think the idea in general is good, however, we understood it that it has too be another “educational” project or one that relates to the 17 UN goals. During EXPO, I have noticed that some of the groups however focused on the “fun” part of the experience, which made me confused on what was the real requirement. If we knew the project not does not have to be strictly related to 17 UN goals, I would have loved to create something more entertaining and not limit ourselves. 
